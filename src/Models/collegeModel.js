@@ -14,8 +14,9 @@ const collegeModel = new mongoose.Schema({
         type:String,
         required: [true,"logoLink is required !"],
     },
-    isDeleted:{ type:Boolean,
-    default:false
+    isDeleted:{ 
+        type:Boolean,
+       default:false
 },
 });
 

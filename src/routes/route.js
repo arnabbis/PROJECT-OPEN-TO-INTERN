@@ -4,13 +4,13 @@ const collageController = require('../Controller/collageController')
 const internController = require('../Controller/internController')
 const router = express.Router();
 
-const collegeModel = require('../Modle/collegeModel')
+const collegeModel = require('../Models/collegeModel')
 
 router.post("/colleges", collageController.Collage) 
 
-router.post('/interns', internController.createIntern)
+router.post('/interns', internController.Intern)
 
-router.get('/collegeDetails', internController.getDetails)
+router.get('/collegeDetail', internController.getDetail)
 
 
 

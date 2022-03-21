@@ -7,6 +7,8 @@ const internModel = new mongoose.Schema({
     name:{
         type:String,
         required: [true ,"Name is required !" ],
+        lowercase: true,
+        trim: true
     },
     email:{
         type:String,
@@ -22,7 +24,7 @@ const internModel = new mongoose.Schema({
         type: String,
         required:[true , "Phone number is required !" ],
         unique:true,
-        match: [/^\s*(?:\+?(\d{1,3}))?[-. (](\d{3})[-. )](\d{3})[-. ](\d{4})(?: *x(\d+))?\s$/, 'Please provide a valid 10 digit Mobile Number']
+         match:[/^[6-9]\d{9}$/]
     },
     collegeId:{
         type:object,
@@ -31,7 +33,8 @@ const internModel = new mongoose.Schema({
     },
     isDeleted:{
      type:Boolean,
-     default:false}
-},{timestamps:true})
+     default:false
+    },
+})
 
 module.exports = mongoose.model('inter', internModel )

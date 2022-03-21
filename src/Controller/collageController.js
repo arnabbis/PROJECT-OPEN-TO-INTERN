@@ -1,4 +1,4 @@
-const collegeModel = require('../Modle/collegeModel')
+const collegeModel = require('../Models/collegeModel')
 
 const Collage = async function (req, res) {
     try {
