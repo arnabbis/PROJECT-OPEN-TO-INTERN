@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const collegeModel = new mongoose.Schema({
+const collegeSchema = new mongoose.Schema({
     name:{
         type:String,
         required: [true,"name is required !"],
@@ -20,4 +20,4 @@ const collegeModel = new mongoose.Schema({
 },
 });
 
-module.exports = mongoose.model('college', collegeModel)
+module.exports = mongoose.model('college', collegeSchema)

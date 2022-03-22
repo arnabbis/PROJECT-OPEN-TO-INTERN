@@ -3,7 +3,7 @@ const { required } = require('nodemon/lib/config');
 const validator = require('validator')
 const object = mongoose.Schema.Types.ObjectId
 
-const internModel = new mongoose.Schema({
+const internSchema = new mongoose.Schema({
     name:{
         type:String,
         required: [true ,"Name is required !" ],
@@ -37,4 +37,4 @@ const internModel = new mongoose.Schema({
     },
 });
 
-module.exports = mongoose.model('inter', internModel )
+module.exports = mongoose.model('inter', internSchema )

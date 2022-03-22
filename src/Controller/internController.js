@@ -4,16 +4,16 @@ const express = require('express');
 const { Router } = require('express');
 const router = express.Router();
 
-// (1) ### POST /functionup/interns:
+// (2) ### POST /functionup/interns:
 
 //CREATE INTERN:
 const Intern = async function (req, res) {
     try {
         let data = req.body
         let collegeId = req.body.collegeId
-        if (!data) return res.status(400).send({ status:false ,message:'The request is not valid as the data are required.'})
+        if (Object.keys(data).length == 0) return res.status(400).send({ status:false ,message:'The request is not valid as the data are required.'})
         let collegeDetail = await collegeModel.findById(collegeId)
-        if (!collegeDetail) return res.status(404).send({status:false, message:'The request is not valid as no intern is present with  given author id'})
+        if (!collegeDetail) return res.status(404).send({status:false, message:'The request is not valid as no intern is present with  given collage id'})
         let createNewIntern = await internModel.create(data)
         res.status(201).send({ status:true , data:createNewIntern })
     }
@@ -35,7 +35,7 @@ const getDetail = async function (req, res) {
         }
         let dataOne = await collegeModel.findOne({ name: coll_name })
         if (!dataOne) {
-           return res.status(403).send({ status: false, message: "The value is Invalid" });
+           return res.status(403).send({ status: false, message: "collage is not present" });
         }
         let data = JSON.parse(JSON.stringify(dataOne))
         const C_id = dataOne._id
