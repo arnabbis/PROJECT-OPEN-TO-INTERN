@@ -1,5 +1,9 @@
 const collegeModel = require('../Models/collegeModel')
 
+// (1) ### POST /functionup/colleges:
+
+//  CREATE COLLAGE:
+
 const Collage = async function (req, res) {
     try {
         const data = req.body

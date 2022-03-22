@@ -35,6 +35,6 @@ const internModel = new mongoose.Schema({
      type:Boolean,
      default:false
     },
-})
+});
 
 module.exports = mongoose.model('inter', internModel )

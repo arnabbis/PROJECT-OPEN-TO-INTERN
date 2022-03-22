@@ -6,11 +6,14 @@ const router = express.Router();
 
 const collegeModel = require('../Models/collegeModel')
 
-router.post("/colleges", collageController.Collage) 
+// ### POST /functionup/colleges:
+router.post("/colleges", collageController.Collage) // CREATE COLLAGES
 
-router.post('/interns', internController.Intern)
+// ### POST /functionup/interns:
+router.post('/interns', internController.Intern)    // CREATE INTERNS
 
-router.get('/collegeDetail', internController.getDetail)
+// ### POST /functionup/interns:
+router.get('/collegeDetail', internController.getDetail)   // GET DETAILS OF THE INTERNS STUDYING IN THE SPECIFIC COLLAGE
 
 
 
