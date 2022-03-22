@@ -34,11 +34,11 @@ const getDetail = async function (req, res) {
             return res.status(400).send({status:false,  msg: "college name must be persent"})
         }
         let dataOne = await collegeModel.findOne({ name: coll_name })
-        let data = JSON.parse(JSON.stringify(dataOne))
-        const C_id = dataOne._id
         if (!dataOne) {
            return res.status(403).send({ status: false, message: "The value is Invalid" });
         }
+        let data = JSON.parse(JSON.stringify(dataOne))
+        const C_id = dataOne._id
         let interns = await internModel.find({ collegeId:C_id}).select({_id:true,name:true,email:true,mobile:true})
          data = {name:dataOne.name,fullName:dataOne.fullName,logoLink:dataOne.logoLink}
         data.interest = [...interns]
