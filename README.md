@@ -146,9 +146,12 @@ PROJECT DONE BY MEMBERS OF GROUP-34:
 @ ARNAB BISWAS @ SUBHAM SHUKLA
 
 HELP TAKEN FROM SITES LIKE :
-(1) STACK OVERFLOW- https://stackoverflow.com/ (2) NPM DOCS - https://docs.npmjs.com/about-npm (3) JWT DEBUGGER - https://jwt.io/ (4) MDN - https://developer.mozilla.org/en-US/docs/Web/JavaScript (5) NOTES FROM FUNCTIONUP (6) GITHUB LINK USED -https://github.com/arnabbisPROJECT-OPEN-TO-INTERN.git (7) DATABASE CONNECTED -mongodb+srv://arnabbiswas_14:arnabbiswas@cluster0.b95gv.mongodb.net/group-34-Database?retryWrites=true&w=majority
+(1) STACK OVERFLOW- https://stackoverflow.com/ (2) NPM DOCS - https://docs.npmjs.com/about-npm (3) MDN - https://developer.mozilla.org/en-US/docs/Web/JavaScript (4) NOTES FROM FUNCTIONUP (5) GITHUB LINK USED -https://github.com/arnabbisPROJECT-OPEN-TO-INTERN.git (6) DATABASE CONNECTED -mongodb+srv://arnabbiswas_14:arnabbiswas@cluster0.b95gv.mongodb.net/group-34-Database?retryWrites=true&w=majority
 
 PROJECT STARTED FROM : 21/03/2022
 PROJECT ENDED AT : 23/03/2022
 SUBMISSION DAY : 23/03/2022
+                             
+                             
+                             
                               ####################### THANK YOU #############################
